@@ -2,7 +2,7 @@
   max-height: 35vh;
   overflow: hidden;
 }
-
+$someone:300px;
 .someone{
-  width: 300px;
+  width: $someone;
 }
