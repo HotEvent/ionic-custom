@@ -21,7 +21,7 @@ module.exports = (config, options) => {
       let test = rule.test;
       return regexEquals(test,/\.css$/)|| regexEquals(test,/\.scss$|\.sass$/)|| regexEquals(test,/\.less$/)|| regexEquals(test,/\.styl$/);
   });
-  console.log(styleRules)
+//   console.log(styleRules)
   styleRules.forEach(rule => {
     //   console.log(rule);
      let currentPostCssLoader = rule.use.find(loader => loader.loader==='postcss-loader');
